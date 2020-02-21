@@ -21,6 +21,10 @@ class HotelCost
     {
       Console.WriteLine("Your stay is going to be expensive!");
     }
+    else if(!(summer || weekend))
+    {
+      Console.WriteLine("Your stay is going to be REALLY cheap!");
+    }
     else
     {
       Console.WriteLine("Your stay is going to be cheap!");
