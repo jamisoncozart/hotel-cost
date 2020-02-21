@@ -12,5 +12,18 @@ class HotelCost
 
     bool summer = season == "summer";
     bool weekend = dayOfWeek == "weekend";
+
+    if(summer && weekend)
+    {
+      Console.WriteLine("Your stay is going to be REALLY expensive!");
+    }
+    else if(summer || weekend)
+    {
+      Console.WriteLine("Your stay is going to be expensive!");
+    }
+    else
+    {
+      Console.WriteLine("Your stay is going to be cheap!");
+    }
   }
 }
